@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/yelp.css">
+    <title>Event Page</title>
+</head>
+
+<body>
+    <div id="buttons" class="center-align">
+        <a class="btn btn-large" id="homeButton">Return Home</a>
+    </div>
+    <div class="row">
+        <div class="card-panel black event-results">
+            <span id="artist" class="event-title truncate"></span><br>
+            <span id="venue"></span><br>
+            <span id="date"></span><br>
+            <span id="time"></span>
+            <a href="" target="_blank" id="info">
+                <div class="card-image hoverable">
+                    <img class="event-pic" id="image">
+                </div>
+            </a>
+        </div>
+    </div>
+    <div id="pageContent">
+
+        <div id="restsContainer" class="col s6">
+            <h3 class="center-align">Restaurants and Bars Near Your Event</h3>
+
+            <div id="yelpRests">
+                <!--Where the yelp resturants will be-->
+            </div>
+        </div>
+
+    <script src="./assets/js/yelp.js"></script>
+</body>
+</html>
