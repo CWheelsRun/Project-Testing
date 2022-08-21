@@ -3,7 +3,7 @@ body {
     flex-direction: column;
     font-family: 'Comfortaa';
     background-size: 200rem;
-    background-image: url('/assets/images/cityscape.png');
+    background-image: url('../../assets/images/cityscape.png');
     color: white;
 }
 
