@@ -2,10 +2,10 @@ body {
   display: flex;
   flex-direction: column;
   font-family: 'Comfortaa';
-  background-size: 350rem;
-  background-image: url('/assets/images/cityscape.png');
+  background-image: url('../images/cityscape.png');
+  background-size: 200%;
   animation-name: move;
-  animation-duration: 120s;
+  animation-duration: 600s;
   animation-iteration-count: infinite;
   animation-timing-function: linear;
   color: white;
@@ -13,14 +13,14 @@ body {
 
 @keyframes move {
   0%, 100% {
-    background-position: right;
+    background-position: top right;
   }
   50% {
-    background-position: left;
+    background-position: top left;
   }
 }
 
-#homeButton {
+.btn-large {
   background-color: darkslateblue;
   margin: 20px;
 }
@@ -29,6 +29,8 @@ h3 {
   text-transform: uppercase;
 }
 
-.event-results {
-  width: 500px;
+footer {
+  background-color: darkslateblue;
+  padding: 1em;
+  text-align: center;
 }

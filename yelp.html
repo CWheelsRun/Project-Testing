@@ -9,36 +9,41 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Comfortaa&display=swap">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
     <link rel="stylesheet" href="./assets/css/yelp.css">
-    <title>Event Page</title>
+    <title>Night On The Town</title>
 </head>
 
 <body>
-    <div id="buttons" class="center-align">
-        <a class="btn btn-large" id="homeButton">Return Home</a>
-    </div>
-    <div class="row">
-        <div class="card-panel black event-results">
-            <span id="artist" class="event-title truncate"></span><br>
-            <span id="venue"></span><br>
-            <span id="date"></span><br>
-            <span id="time"></span>
-            <a href="" target="_blank" id="info">
-                <div class="card-image hoverable">
-                    <img class="event-pic" id="image">
-                </div>
-            </a>
+
+    <div class="container">
+        <div class="center-align">
+            <button onclick="location.href='index.html'" class="btn btn-large" id="homeButton">Return Home</button>
         </div>
-    </div>
-    <div id="pageContent">
+        
+        <div class = "event-container" id="results" >
+        </div>
 
-        <div id="restsContainer" class="col s6">
-            <h3 class="center-align">Restaurants and Bars Near Your Event</h3>
+        <div id="pageContent">
+            <div id="restsContainer" class="col s6">
+                <h3 class="center-align">Restaurants and Bars Near Your Event</h3>
 
-            <div id="yelpRests">
-                <!--Where the yelp resturants will be-->
+                <div id="yelpRests">
+                    <!--Where the yelp resturants will be-->
+                </div>
             </div>
         </div>
 
-    <script src="./assets/js/yelp.js"></script>
+        <footer>
+            <div class="container">
+                © 2022 Sour Patch Squad
+            </div>
+        </footer>
+    </div>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.24.0/moment.min.js"> </script>
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+    <script type="text/javascript" src="./assets/js/yelp.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
 </body>
+
 </html>

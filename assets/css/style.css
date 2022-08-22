@@ -2,21 +2,21 @@ body {
     display: flex;
     flex-direction: column;
     font-family: 'Comfortaa';
-    background-size: 300rem;
     background-image: url('../images/cityscape.png');
+    background-size: 200%;
     animation-name: move;
-    animation-duration: 120s;
+    animation-duration: 600s;
     animation-iteration-count: infinite;
     animation-timing-function: linear;
     color: white;
 }
-  
+
 @keyframes move {
     0%, 100% {
-      background-position: right;
+      background-position: top right;
     }
     50% {
-      background-position: left;
+      background-position: top left;
     }
 }
 
@@ -40,32 +40,17 @@ input {
     background-color: darkslateblue;
 }
 
-#music-btn {
-    margin-left: 2.5%;
-    margin-right: 10%;
-}
-
-#arts-btn {
-    margin-left: 10%;
-    margin-right: 2.5%;
+#find-events-btn {
+    width: 50%;
+    margin-left: 25%;
 }
 
 footer {
-    background-color: darkslateblue;
-    padding: 1em;
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    line-height: 30px;
+    background-color: rgb(72, 61, 139, 0.5);
     text-align: center;
-}
-
-#tabs {
-    flex-direction: row;
-    margin-bottom: 20px;
-    text-align: center;
-}
-
-.btn-floating {
-    background-color: darkslateblue;
-}
-
-#tab-left {
-    margin-right: 5%;
 }
